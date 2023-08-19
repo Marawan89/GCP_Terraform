@@ -1,0 +1,486 @@
+@import 'mixins';
+@import 'variables';
+
+body {
+    background-image: url("img/background-image.png");
+    background-size: 900px;
+    padding: 0 2%
+}
+
+p {
+    color: hsl(0, 50%, 25%);
+    line-height: 1.5;
+}
+
+#centerPage {
+    background-color: white;
+}
+
+
+
+a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.footer {
+    background-color: #eee;;
+    text-align: center;
+    font-size: 18px;
+}
+
+//INDEX PAGE
+
+#index {
+    @include sm {
+        height: auto;
+        grid-template-rows: 1fr auto;
+
+    }
+
+    @include md {
+        grid-template-rows: 1fr auto;
+
+    }
+
+    @include lg {
+        grid-template-rows: 0.5fr auto;
+
+
+    }
+}
+
+#row-1 {
+    @include sm {
+        flex-direction: column;
+        margin-bottom: 5%;
+
+        img {
+            max-width: 30%;
+            margin: 0 auto;
+        }
+
+        .grid-container-head {
+            p {
+                font-size: small;
+            }
+        }
+    }
+
+    @include md {
+
+        flex-direction: row;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    @include lg {
+        flex-direction: column;
+        margin-bottom: 5%;
+
+        img {
+            max-width: 25%;
+            margin: 0 auto;
+
+        }
+
+        .grid-container-head {
+
+            p {
+                font-size: small;
+            }
+        }
+    }
+
+}
+
+#row-2 {
+    @include sm {
+        flex-direction: column;
+
+
+        .map-container {
+            p {
+                margin: 2% 0%;
+            }
+
+        }
+    }
+
+    @include md {
+        flex-direction: row;
+
+        .history-container {
+            width: 55%;
+
+        }
+
+        .map-container {
+            align-self: center;
+            padding: 5%;
+        }
+
+    }
+
+    @include lg {
+        height: 100%;
+
+        .history-container {
+            width: 50%;
+        }
+
+        .map-container {
+            align-self: unset;
+            padding: 0;
+            width: 50%;
+        }
+    }
+}
+
+//LOGIN PAGE
+
+
+
+
+//REVIEWS
+
+.grid-1 {
+    @include sm {
+
+        .review-preview {
+            grid-template-columns: auto auto;
+
+            border-bottom: 1px solid red;
+        }
+
+        .element {
+            p {
+                font-size: 0.8em;
+            }
+
+            .stars {
+                max-width: 50%;
+            }
+        }
+
+
+    }
+
+    @include md {
+        grid-template-columns: repeat(2, auto);
+
+        .review-preview {
+            
+            flex-direction: column;
+            border-bottom: 1px solid blue;
+
+        }
+
+        .element {
+            p {
+                font-size: 1.2em;
+            }
+
+            .stars {
+                max-width: 70%;
+            }
+        }
+
+    }
+
+    @include lg {
+
+        .review-preview {
+            border-bottom: 1px solid green;
+
+        }
+
+        .element {
+            p {
+                font-size: 1.2em;
+            }
+
+            .stars {
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+
+.grid-2 {
+    @include sm {
+        h3 {
+            text-align: center;
+            margin: 2%;
+
+        }
+
+    }
+
+    @include md {
+        h3 {
+            text-align: center;
+            margin: 1%;
+
+        }
+
+
+    }
+
+    @include lg {}
+}
+
+
+
+
+
+//RESERVATION
+
+.main {
+
+    @include sm {
+        justify-items: center;
+        grid-template-rows: repeat(2, auto);
+
+
+
+
+
+        .table,
+        .section {
+            h3 {
+                text-align: center;
+                margin: 4%;
+            }
+        }
+
+    }
+
+    @include md {
+        align-items: center;
+
+        .aside {
+            justify-self: center;
+        }
+
+        .table {
+            justify-items: center;
+
+            h3 {
+                margin: 3%;
+            }
+        }
+
+        .section {
+            display: grid;
+
+            h3 {
+
+                margin: 3%;
+            }
+        }
+
+    }
+
+    @include lg {
+        justify-items: unset;
+        grid-template-columns: 30% auto;
+
+        .table {
+            margin: 2%;
+            justify-items: unset;
+
+        }
+
+        .section {
+            grid-area: 2/2 / span 1/ 3;
+
+            th {
+                text-align: left;
+            }
+        }
+
+    }
+}
+
+
+
+//PROFILO
+.info {
+    @include sm {
+        flex-direction: column;
+
+        img {
+            align-self: center;
+            max-width: 70%;
+
+            border-radius: 50%;
+        }
+
+        .row {
+            flex-direction: column;
+        }
+
+        .profile-data {
+            flex-direction: column;
+            font-size: 1em;
+            margin: auto 0;
+        }
+    }
+
+    @include md {
+
+    }
+
+    @include lg {
+    }
+
+}
+
+.review-history {
+    @include sm {
+
+        table {
+
+
+            thead {
+                flex-direction: row;
+                justify-content: space-between;
+                word-break: break-all;
+
+            }
+
+            tbody {
+                flex-direction: column;
+
+                tr {
+
+                    flex-direction: row;
+
+                    td {
+                        img {
+
+                            max-width: 70%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @include md {
+
+    }
+
+    @include lg {
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+
+}
+
+.reservation-history-cliente {
+    @include sm {
+
+        table {
+
+            thead{
+                word-break: break-all;
+            }
+            tbody {
+
+                tr {
+
+
+
+                    td {
+
+                        img {
+
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @include md {
+
+    }
+
+    @include lg {
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+
+}
+
+.reservation-history-gestore {
+    @include sm {
+
+        table {
+
+
+            thead {
+                word-break: break-all;
+            }
+
+            tbody {
+
+
+                tr {
+
+
+
+                    td {
+
+                        img {
+
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @include md {
+
+    }
+
+    @include lg {
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: hsl(232, 50%, 25%);
+    background-color: white;
+}
+
+.link:hover,
+:focus {
+    text-decoration: underline;
+}
