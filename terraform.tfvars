@@ -1,3 +1,7 @@
 project_id = "astracloud"
+db_name = "astra"
 password_service_user = "ciao123"
-password_admin_user = "ciao321"
+db_service_user = "astra_service_user"
+user_github = "Marawan89"
+repository_name = "Astra"
+repository_branch = "main"
