@@ -30,6 +30,7 @@ Questo è l'elenco di tutto il necessario per eseguire il deploy di un'applicazi
     </ul>
   <li><a href="#GoogleCloudRun">GoogleCloudRun</a></li>
   <li><a href="#GoogleCloudBuild">GoogleCloudBuild</a></li>
+  <li><a href="#Dashboard">Dashboard</a></li>
   <li><a href="#Contatti">Contatti</a></li>
 </ol>
 
@@ -92,6 +93,50 @@ Per prima cosa ho creato un file chiamato cloudbuild.yaml (da sintassi) che sar�
 Ho creato un trigger chiamato AstraTrigger che si attiva quando si effettua uno specifico evento (push al ramo). Ho quindi specificato tutti i dati della repository github in modo tale che il trigger possa avere accesso, e che possa visualizzare ogni commit in autonomia e aggiornare l'immagine del container.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Dashboard
+
+Questi sono i grafici che ho usato per per monitorare le parti più essenziali del mio progetto:-
+
+### Queries
+
+<div align="center">
+  <a href="https://github.com/Marawan89/GCP_Terraform">
+    <img src="Queries.png">
+  </a>
+</div>
+
+### CPU Utilization
+
+<div align="center">
+  <a href="https://github.com/Marawan89/GCP_Terraform">
+    <img src="CPU_Utilization.png">
+  </a>
+</div>
+
+### Memory Utilization
+
+<div align="center">
+  <a href="https://github.com/Marawan89/GCP_Terraform">
+    <img src="Memory_Utilization.png">
+  </a>
+</div>
+
+### Top 5 Highest Network Sent Bytes
+
+<div align="center">
+  <a href="https://github.com/Marawan89/GCP_Terraform">
+    <img src="Top_5_Highest_Network_Sent_Bytes.png">
+  </a>
+</div>
+
+### Top 5 Highest Network Received Bytes
+
+<div align="center">
+  <a href="https://github.com/Marawan89/GCP_Terraform">
+    <img src="Top_5_Highest_Network_Received_Bytes.png">
+  </a>
+</div>
 
 ## Contatti
 
