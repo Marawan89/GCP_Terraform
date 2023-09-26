@@ -8,7 +8,7 @@ Questo è uno schema architetturale del progetto:
 
 <div align="center">
   <a href="https://github.com/Marawan89/GCP_Terraform">
-    <img src="Schema.drawio.png" alt="scheme">
+    <img src="Schema.drawio.png">
   </a>
 </div>
 
