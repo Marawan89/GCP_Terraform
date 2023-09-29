@@ -19,17 +19,17 @@ Questo è l'elenco di tutto il necessario per eseguire il deploy di un'applicazi
 <ol>
   <li><a href="#Container">Container</a></li>
     <ul>
-      <li><a href="#DockerFile">DockerFile</a></li>
-      <li><a href="#DockerBuild">DockerBuild</a></li>
-      <li><a href="#DockerRun">DockerRun</a></li>
+      <li><a href="#dockerFile">dockerFile</a></li>
+      <li><a href="#dockerBuild">dockerBuild</a></li>
+      <li><a href="#dockerRun">dockerRun</a></li>
     </ul>
   <li><a href="#Database">Database</a></li>
     <ul>
-      <li><a href="#DBInstance">DBInstance</a></li>
-      <li><a href="#ServiceDBUser">ServiceDBUser</a></li>
+      <li><a href="#Instance">Instance</a></li>
+      <li><a href="#serviceUser">serviceUser</a></li>
     </ul>
-  <li><a href="#GoogleCloudRun">GoogleCloudRun</a></li>
-  <li><a href="#GoogleCloudBuild">GoogleCloudBuild</a></li>
+  <li><a href="#GCR">GCR</a></li>
+  <li><a href="#GCB">GCB</a></li>
   <li><a href="#Dashboard">Dashboard</a></li>
   <li><a href="#Contatti">Contatti</a></li>
 </ol>
